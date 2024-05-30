@@ -4,4 +4,4 @@ const initialState = {
 };
 const counterSlice = createSlice({
   name: "counter",
-});
+});;
