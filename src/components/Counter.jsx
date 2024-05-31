@@ -1,7 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-import { incrementByAmount, selectCounter } from "../features/CounterSlice";
-import { increment, decrement } from "../features/CounterSlice";
+import {
+  incrementByAmount,
+  selectCounter,
+} from "../features/counter/CounterSlice";
+import { increment, decrement } from "../features/counter/CounterSlice";
 import Store from "../app/Store";
 
 const Counter = () => {
