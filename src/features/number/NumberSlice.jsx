@@ -16,3 +16,5 @@ const numberSlice = createSlice({
     },
   },
 });
+export default numberSlice.reducer;
+export const {increment,decrement}=numberSlice.actions;
