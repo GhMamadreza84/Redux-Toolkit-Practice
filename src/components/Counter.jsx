@@ -26,6 +26,8 @@ const Counter = () => {
       <button onClick={() => dispatch(incrementByAmount(+value))}>
         Increment By Amount
       </button>
+      <br />
+      <hr />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../features/number/NumberSlice";
 
 const Number = () => {
-  const number = useSelector((Store) => Store.counter.counterValue);
+  const number = useSelector((state) => state.number.numberValue);
   const dispatch = useDispatch();
   return (
     <div>
