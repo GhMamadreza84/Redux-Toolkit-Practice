@@ -1,9 +1,9 @@
+import { createSlice } from "@reduxjs/toolkit";
 
-const NumberSlice = () => {
-  return (
-    <div>
-    </div>
-  );
-}
+const initialState = {
+  number: 0,
+};
 
-export default NumberSlice;
+const numberSlice = createSlice({
+  name: number,
+});
