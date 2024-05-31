@@ -1,10 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
 import { increment, decrement } from "../features/number/NumberSlice";
-import Store from "../app/Store";
 
-const Counter = () => {
-  const number = useSelector((Store) => Store.number.numberValue);
+const Number = () => {
+  const number = useSelector((Store) => Store.counter.counterValue);
   const dispatch = useDispatch();
   return (
     <div>
@@ -17,4 +15,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default Number;
