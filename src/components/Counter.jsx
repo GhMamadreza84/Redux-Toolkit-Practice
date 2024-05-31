@@ -5,7 +5,7 @@ import { increment, decrement } from "../features/CounterSlice";
 import Store from "../app/Store";
 
 const Counter = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(2);
   const counter = useSelector(selectCounter);
   const dispatch = useDispatch();
   return (
@@ -18,7 +18,7 @@ const Counter = () => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button onClick={() => dispatch(incrementByAmount(value))}>
+      <button onClick={() => dispatch(incrementByAmount(+value))}>
         Increment By Amount
       </button>
     </div>
