@@ -17,3 +17,4 @@ const CounterSlice = createSlice({
 
 export default CounterSlice.reducer;
 export const { increment, decrement } = CounterSlice.actions;
+export const selectCounter =Store=>Store.counter.counterValue;

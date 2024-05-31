@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import Store from "../app/Store";
 const Counter = () => {
-  const counter = useSelector(Store=>Store.counter.counterValue);
+  const counter = useSelector();
   return <div>Counter is {counter}</div>;
 };
 
