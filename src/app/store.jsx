@@ -5,7 +5,7 @@ import NumberReducer from "../features/number/NumberSlice";
 const Store = configureStore({
   reducer: {
     counter: CounterReducer,
-    number: NumberReducer,
+    number: NumberReducer, 
   },
 });
 
