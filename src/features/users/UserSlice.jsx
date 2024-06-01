@@ -6,8 +6,14 @@ const initialState = {
   error: "",
 };
 
+const fetchUsers = createAsyncThunk("users/fetchUsers",()=>{
+  fetch("https://jsonplaceholder.typicode.com/users")
+})
+
 const userSlice = createSlice({
   name: "user",
   initialState,
-  extraReducers: {},
+  extraReducers:(builder)=>{
+
+  }
 });
