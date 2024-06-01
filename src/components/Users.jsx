@@ -6,10 +6,11 @@ const Users = () => {
   const users = useSelector((state) => state.users);
   const dispatch = useDispatch();
   console.log(users)
+
   useEffect(() => {
-    dispatch(fetchUsers(users));
+    dispatch(fetchUsers());
   }, []);
-  return <div></div>;
+  return <div>Users</div>;
 };
 
 export default Users;
